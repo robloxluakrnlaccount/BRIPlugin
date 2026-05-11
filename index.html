@@ -318,6 +318,79 @@
       line-height: 1.6;
     }
 
+    /* ── OTHER PLUGINS ── */
+    .other-plugins {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .plugin-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      transition: border-color .2s;
+    }
+    .plugin-card:hover { border-color: var(--accent); }
+    .plugin-card-left {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      flex: 1;
+    }
+    .plugin-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .plugin-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .plugin-card p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .plugin-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .plugin-features span {
+      font-size: 0.7rem;
+      font-family: 'DM Mono', monospace;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      color: var(--muted);
+    }
+    .plugin-features em {
+      font-style: normal;
+      color: var(--accent);
+    }
+    .btn-plugin {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.82rem;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-plugin:hover { border-color: var(--accent); color: var(--accent); }
+
     /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border);
@@ -463,6 +536,48 @@
         <h3>Captures UI</h3>
         <p>Got cleaned up too.</p>
       </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- MORE PLUGINS -->
+  <section>
+    <div class="section-label">More by the developer</div>
+    <div class="section-title">Other plugins</div>
+    <p class="section-sub">More tools built for Roblox Studio.</p>
+    <div class="other-plugins">
+
+      <div class="plugin-card">
+        <div class="plugin-card-left">
+          <div class="plugin-icon">🛠️</div>
+          <div>
+            <h3>Better Roblox Interface</h3>
+            <p>A simple plugin that makes Roblox's interface look a little less outdated. Small visual tweaks that make Studio feel a bit nicer to use.</p>
+          </div>
+        </div>
+        <a class="btn-plugin" href="https://create.roblox.com/store/asset/92734881241165/Better-Roblox-Interface?pageNumber=1&pagePosition=1" target="_blank">Get on Roblox →</a>
+      </div>
+
+      <div class="plugin-card">
+        <div class="plugin-card-left">
+          <div class="plugin-icon">⚙️</div>
+          <div>
+            <h3>Script Editor Pro</h3>
+            <p>The ultimate toolkit for Roblox developers. Streamline your workflow with powerful search, real-time synchronization monitoring, advanced editing, and AI-assisted coding — all integrated directly into Roblox Studio.</p>
+            <div class="plugin-features">
+              <span>Instant Script Search</span>
+              <span>Live Desync Monitor</span>
+              <span>Advanced Editing Suite</span>
+              <span>"Now Here!" Syntax</span>
+              <span>AI Script Assistant <em>New!</em></span>
+              <span>Studio UI Enhancements <em>New!</em></span>
+            </div>
+          </div>
+        </div>
+        <a class="btn-plugin" href="https://create.roblox.com/store/asset/94618895300163/Script-Editor-Pro?pagePosition=0" target="_blank">Get on Roblox →</a>
+      </div>
+
     </div>
   </section>
 
